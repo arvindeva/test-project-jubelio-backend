@@ -29,7 +29,6 @@ server.route({
             errMessage: 'no items found'
           };
         }
-        console.log(results);
         return results;
       })
       .catch(err => {
@@ -42,7 +41,6 @@ server.route({
   method: 'GET',
   path: '/api/items',
   handler: (request, h) => {
-    console.log('getting');
     return knex('items')
       .select('id', 'name', 'description', 'price', 'image_url')
       .then(results => {
@@ -52,7 +50,6 @@ server.route({
             errMessage: 'no items found'
           };
         }
-        console.log(results);
         return results;
       })
       .catch(err => {
@@ -64,7 +61,6 @@ server.route({
 // Handler for creating item, using s3 to upload image
 // and then store the image url along with the data to database.
 const uploadHandler = () => async (request, h) => {
-  console.log('begin')
   let item = request.payload;
 
   let itemData = {
@@ -92,7 +88,6 @@ const uploadHandler = () => async (request, h) => {
     .catch(err => {
       responseFile = err.message;
     });
-  console.log(itemData);
   return {
     data: itemData,
     message: 'successfully created item'

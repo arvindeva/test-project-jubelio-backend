@@ -12,7 +12,7 @@ aws.config.update({
   secretAccessKey: process.env.S3_SECRET,
   region: 'us-east-1'
 });
-// Decent bucket name
+// bucket name
 const bucketName = 'jubelio-s3-bucket';
 // Initiating S3 instance
 const s3 = new aws.S3({
@@ -22,8 +22,10 @@ const s3 = new aws.S3({
     }
 });
 
+// queue size
 const options = { partSize: 10 * 1024 * 1024, queueSize: 1 };
 
+// Upload gambar ke S3
 async function fileUpload(file) {
   const params = {
     Bucket: bucketName,
