@@ -4,7 +4,7 @@ const fileUpload = require('./src/fileUpload');
 require('dotenv').config();
 
 const server = Hapi.server({
-  port: process.env.PORT || 5000,
+  port: 5000,
   host: 'localhost',
   routes: {
     cors: {
