@@ -6,8 +6,10 @@ require('dotenv').config();
 
 // Setting aws configurations
 aws.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  // accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  // secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  accessKeyId: 'AKIAJDIGMHOD4CXJ72LA',
+  secretAccessKey: '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',
   region: 'us-east-1'
 });
 // Decent bucket name
