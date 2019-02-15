@@ -1,4 +1,4 @@
-const Hapi = require('Hapi');
+const Hapi = require('hapi');
 const knex = require('./src/knex');
 const fileUpload = require('./src/fileUpload');
 require('dotenv').config();
