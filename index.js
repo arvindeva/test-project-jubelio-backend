@@ -4,8 +4,8 @@ const fileUpload = require('./src/fileUpload');
 require('dotenv').config();
 
 const server = Hapi.server({
-  port: process.env.PORT || 5000,
-  host: 'test-project-jubelio-backend',
+  // port: process.env.PORT || 5000,
+  host: 'https://test-project-jubelio-backend.herokuapp.com/',
   routes: {
     cors: {
       origin: ['*']
