@@ -5,10 +5,10 @@ Backend API untuk aplikasi pencatatan barang
 API endpoints: 
 
 Untuk retrieve semua item:
-GET: https://test-project-jubelio-backend.herokuapp.com/api/items/
+GET: https://test-project-jubelio-backend.herokuapp.com/api/items
 
 Untuk tambah item:
-POST: https://test-project-jubelio-backend.herokuapp.com/api/items/
+POST: https://test-project-jubelio-backend.herokuapp.com/api/items
 
 Untuk update 1 item:
 PUT: https://test-project-jubelio-backend.herokuapp.com/api/items/:id
