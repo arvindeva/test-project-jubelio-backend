@@ -10,7 +10,7 @@ const server = Hapi.server({
       origin: ['*']
     },
     payload: {
-      maxBytes: 104857651
+      maxBytes: 1048576
     }
   }
 });
