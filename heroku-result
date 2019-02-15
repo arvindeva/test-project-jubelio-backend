@@ -1,5 +1,0 @@
-Connection information for default credential.
-Connection info string:
-   "dbname=d9lq9jopff0jee host=ec2-50-19-109-120.compute-1.amazonaws.com port=5432 user=jkmchlsyqqgbjs password=d7dbeded888a1a15d7a38b6c409a148afe9d20dbc4acba59c10d067149c1bc49 sslmode=require"
-Connection URL:
-   postgres://jkmchlsyqqgbjs:d7dbeded888a1a15d7a38b6c409a148afe9d20dbc4acba59c10d067149c1bc49@ec2-50-19-109-120.compute-1.amazonaws.com:5432/d9lq9jopff0jee
