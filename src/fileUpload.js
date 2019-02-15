@@ -1,11 +1,13 @@
 // aws config
 
 const aws = require('aws-sdk');
+require('dotenv').config();
+
 
 // Setting aws configurations
 aws.config.update({
-  accessKeyId: 'AKIAIXYBJVOUMG7INRLA',
-  secretAccessKey: '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',
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
   region: 'us-east-1'
 });
 // Decent bucket name
