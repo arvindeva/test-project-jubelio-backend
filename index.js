@@ -1,6 +1,7 @@
 const Hapi = require('Hapi');
 const knex = require('./src/knex');
 const fileUpload = require('./src/fileUpload');
+require('dotenv').config();
 
 const server = Hapi.server({
   port: 5000,

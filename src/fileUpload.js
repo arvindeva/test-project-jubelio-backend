@@ -1,13 +1,11 @@
 // aws config
 
 const aws = require('aws-sdk');
-require('dotenv').config();
-
 
 // Setting aws configurations
 aws.config.update({
-  accessKeyId: process.env.ACCESS_KEY_ID,
-  secretAccessKey: process.env.SECRET_ACCESS_KEY,
+  accessKeyId: 'AKIAIXYBJVOUMG7INRLA',
+  secretAccessKey: '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',
   region: 'us-east-1'
 });
 // Decent bucket name
@@ -15,7 +13,7 @@ const bucketName = 'jubelio-s3-bucket';
 // Initiating S3 instance
 const s3 = new aws.S3({
   apiVersion: '2006-03-01',
-  params: {   
+  params: { 
     Bucket: bucketName
     }
 });
