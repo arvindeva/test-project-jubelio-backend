@@ -7,7 +7,8 @@ module.exports = {
     },
     seeds: {
       tableName: './seeds'
-    }
+    },
+    ssl: true
   },
   development: {
     migrations: { tableName: 'knex_migrations' },
