@@ -1,2 +1,3 @@
 .env
-heroku-resultnode_modules
+heroku-result
+node_modules
