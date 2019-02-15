@@ -1,4 +1,14 @@
 module.exports = {
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+    migrations: {
+      tableName: 'knex_migrations'
+    },
+    seeds: {
+      tableName: './seeds'
+    }
+  },
   development: {
     migrations: { tableName: 'knex_migrations' },
     seeds: { tableName: './seeds' },
