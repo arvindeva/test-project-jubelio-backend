@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const server = Hapi.server({
   // port: process.env.PORT || 5000,
-  host: 'https://test-project-jubelio-backend.herokuapp.com/',
+  hostname: 'https://test-project-jubelio-backend.herokuapp.com/',
   routes: {
     cors: {
       origin: ['*']
