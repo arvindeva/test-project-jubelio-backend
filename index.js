@@ -18,6 +18,28 @@ const server = Hapi.server({
 // Read all items
 server.route({
   method: 'GET',
+  path: '/',
+  handler: (request, h) => {
+    return knex('items')
+      .select('id', 'name', 'description', 'price', 'image_url')
+      .then(results => {
+        if (!results || results.length === 0) {
+          return {
+            error: true,
+            errMessage: 'no items found'
+          };
+        }
+        console.log(results);
+        return results;
+      })
+      .catch(err => {
+        return 'server-side error';
+      });
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/api/items',
   handler: (request, h) => {
     return knex('items')
